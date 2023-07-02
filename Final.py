@@ -8,14 +8,14 @@ sns.set_style('darkgrid')
 plt.rcParams['figure.figsize'] = (20, 10)
 
 # Importing the data
-df = pd.read_csv('C:/Users/Shree/Desktop/UPGrad/Wipro.csv').set_index("Date")
+df = pd.read_csv('./Wipro.csv').set_index("Date")
 
 # Plotting the graph of close price with respect to the date
 plt.figure(figsize = (20, 10))
 plt.plot(df.index, df.close)
 plt.xlabel('Date', fontsize = 20)
 plt.ylabel('Closing Prices', fontsize = 20)
-plt.title('WIPRO Stock Proce', fontsize = 20)
+plt.title('WIPRO Stock Price', fontsize = 20)
 plt.show()
 
 """Calculating the Simple Moving Average of 20 days """
